@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/AkayaKanadaka-Regular.ttf">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <title>Resume</title>
+</head>
+<body>
+    
+    <section class="header">
+        <div class="header__wrapper">
+            <nav class="nav">
+                <ul class="nav__wrapper">
+                    <img class="nav__wrapper_item logo" src="./assets/img/logo.webp">
+                    <li class="nav__wrapper_item"><a href="#education">Education</a></li>
+                    <li class="nav__wrapper_item"><a href="#projects">Projects</a></li>
+                    <li class="nav__wrapper_item"><a href="#about">About me</a></li>
+                    <li class="nav__wrapper_item"><a href="#contacts">Contacts</a></li>
+                    <li class="nav__wrapper_item"><button class="nav_btn">Call me!</button></li>
+                </ul>
+            </nav>
+            <h1>LEARN CREATE EDUCATE</h1>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main_wrapper">
+            <div id=accordion>
+				<p class="accordion-heading"><a href="#" id="about">About me</a></p>
+				<div class="accordion-block">
+					<p>
+						Привет! Меня зовут Бочаров Максим, мне 18 лет и я родом из города Бахмут, Донецкой области. Свою тягу к веб-разработке я развил банально посещая различные сайты. С течением времени я понял, что хотел бы начать понимать как они работают и разрабатываются. Люблю делиться полученным опытом и так же всегда с удовольствием получать его от других. Сам по себе я коммуникабельный, целеустремленный и ответственный парень! С радостью хотел бы влиться в командную разработку и начать разрабатывать какие-либо проекты!
+					</p>
+				</div>
+				<p class="accordion-heading"><a href="#" id="education">Education</a></p>
+				<div class="accordion-block">
+					<p>
+						Имею полное среднее образование и неоконченное высшее образование. Учусь на 2 курсе в ХНУРЕ на специальности "Компьютерная инженерия". Так же проходил курсы на Udemy <i>"Web-разработчик"</i> и <i>"Полный курс JavaScript + React", был на курсах EPAM четыре месяца параллельно практиковался и самообучался.</i>
+
+					</p>
+				</div>
+				<p class="accordion-heading"><a href="#" id="projects">Projects</a></p>
+				<div class="accordion-block">
+					<p>
+						Имею некоторое кличество проектов как по HTML, так и по JS (React).
+                        <div class="strong"><strong>Ссылки:</strong></div>
+                        <ul class="projects_list">
+                            <li><a target="_blank" href="https://github.com/Maksim-creator/movies">https://github.com/Maksim-creator/movies</a></li>
+                            <li><a target="_blank" href="https://github.com/Maksim-creator/windows">https://github.com/Maksim-creator/windows</a></li>
+                            <li><a target="_blank" href="https://github.com/Maksim-creator/Pulse">https://github.com/Maksim-creator/Pulse</a></li>
+                            <li><a target="_blank" href="https://github.com/Maksim-creator/WordPress">https://github.com/Maksim-creator/WordPress</a></li>
+                            <li><a target="_blank" href="https://github.com/Maksim-creator/star-db-React">https://github.com/Maksim-creator/star-db-React</a></li>
+                            <li><a target="_blank" href="https://github.com/Maksim-creator/todo-list-React">https://github.com/Maksim-creator/todo-list-React</a></li>
+                            <li><a target="_blank" href="https://github.com/Maksim-creator/uber">https://github.com/Maksim-creator/uber</a></li>
+                        </ul>
+					</p>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contacts__wrapper">
+            <div class="animate">
+                <a class="contacts__phone" href="tel:+380661333818">+38(066)-133-38-18</a>
+            </div>
+            <div class="animate">
+                <a class="contacts__email" href="mailto:maksimka.bocharov11@gmail.com">maksimka.bocharov11@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__wrapper">
+                <a href="tel:+380661333818">+38(066)-133-38-18</a>
+                <a href="mailto:maksimka.bocharov11@gmail.com">maksimka.bocharov11@gmail.com</a>
+                <p>Get in touch with me!</p>
+                <button>Okey!</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

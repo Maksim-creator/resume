@@ -1,0 +1,245 @@
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'AkayaKanadaka-Regular', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background: url('../img/nature.jpg') center center/cover no-repeat;
+}
+
+.nav {
+    padding: 10px 0 0 0;
+}
+
+.nav .nav__wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav .nav__wrapper .nav__wrapper_item {
+    list-style-type: none;
+    font-size: 19px;
+}
+
+.nav .nav__wrapper .nav__wrapper_item a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.nav .nav__wrapper .nav__wrapper_item:first-child{
+    padding-right: 100px;
+}
+
+.nav .nav__wrapper .nav__wrapper_item:last-child button{
+    color: aliceblue;
+    border-radius: 4%;
+    background-color: rgb(199, 136, 54);
+    border: none;
+    font-size: 19px;
+    padding: 8px 17px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+}
+
+.header h1 {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 300px 0;
+}
+
+.about_header {
+    padding: 20px;
+}
+
+.about hr {
+    width: 20%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.about_subheader {
+    text-align: center;
+    padding: 8px;
+    font-weight: 15px;
+    text-transform: uppercase;
+}
+
+.accordion-heading {
+    font-size: 2.2rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+
+
+.accordion-heading a {
+    border-bottom: 2px dotted #333;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+p.active-style a {
+    color: #E950D7;
+    font-weight: 900;
+    text-decoration: none;
+    border: 0;
+  }
+.accordion-heading.active+.accordion-block {
+    display: block;
+  }
+.accordion-block {
+    background-color: #fff;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s all ease-out;
+    overflow: hidden;
+  }
+.accordion-block.active-content {
+    opacity: 1;
+    padding: 3rem 4rem;
+    margin-top: 1rem;
+    overflow: visible;
+  }
+  
+  .accordion-block:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -6rem;
+    border: 3rem solid transparent;
+    border-bottom: 3rem solid #f7e7e6;
+  }
+  .ui-accordion-header-active {
+    cursor: auto;
+    color: #c51abb;
+    margin-bottom: 0;
+  }
+  .ui-accordion-header-active span {
+    border-bottom: none;
+  }
+  .ui-accordion-content-active {
+    margin-bottom: 4rem;
+  }
+
+  .modal {
+    top: calc(50% - 83.3px);
+    left: calc(50% - 200px);
+    position: fixed;
+    background-color: rgb(248, 241, 241);
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 2, 2, .7);
+    left: 0;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+  }
+
+  .modal .modal__wrapper {
+    padding: 40px 30px 57px 30px;
+    /* position: relative; */
+    box-sizing: border-box;
+  }
+
+  .modal .modal__wrapper a, .modal .modal__wrapper p {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .modal .modal__wrapper p {
+    color:darkorchid;
+    padding-top: 5px;
+  }
+
+  .modal .modal__wrapper button {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    background-color: silver;
+    border: none;
+    color: black;
+    font-size: 12px;
+    padding: 10px 18px;
+    transform: translate(-50%, 0%);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .projects_list li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .projects_list li {
+    padding-top: 8px;
+  }
+
+  .strong {
+    margin-top: 10px;
+  }
+
+.footer {
+  background: linear-gradient( to bottom ,#fff, gold);
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.contacts__wrapper .animate {
+  padding: 25px 13px;
+  border: 2px black solid;
+  border-radius: 5px;
+  background: gold;
+  box-shadow: 0 -200px 100px -120px crimson inset;
+  animation: background 3s infinite alternate;
+}
+
+
+@keyframes background {
+  50% {
+    background: skyblue;
+    box-shadow: 0 -200px 100px -100px yellowgreen inset;
+  }
+}
+
+.contacts__wrapper .animate a {
+  margin: 0 auto;
+  text-decoration: none;
+  color:indigo;
+}
