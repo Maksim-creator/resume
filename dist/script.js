@@ -932,14 +932,11 @@ module.exports = g;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/accordeon */ "./src/js/modules/accordeon.js");
 /* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ "./src/js/modules/modal.js");
-/* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scrolling */ "./src/js/modules/scrolling.js");
-
 
 
 window.addEventListener('DOMContentLoaded', function () {
   Object(_modules_accordeon__WEBPACK_IMPORTED_MODULE_0__["default"])('.accordion-heading');
   Object(_modules_modal__WEBPACK_IMPORTED_MODULE_1__["default"])('.nav_btn', '.overlay');
-  Object(_modules_scrolling__WEBPACK_IMPORTED_MODULE_2__["default"])();
 });
 
 /***/ }),
@@ -1032,55 +1029,6 @@ var modal = function modal(triggerSelector, modalSelector) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (modal);
-
-/***/ }),
-
-/***/ "./src/js/modules/scrolling.js":
-/*!*************************************!*\
-  !*** ./src/js/modules/scrolling.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_0__);
-
-
-var scrolling = function scrolling() {
-  var links = document.querySelectorAll('[href^="#"]'),
-      speed = 0.3;
-  links.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      var widthTop = document.documentElement.scrollTop,
-          hash = this.hash,
-          toBlock = document.querySelector(hash).getBoundingClientRect().top,
-          start = null;
-      requestAnimationFrame(step);
-
-      function step(time) {
-        if (!start) {
-          start = time;
-        }
-
-        var progress = time - start,
-            r = toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock);
-        document.documentElement.scrollTo(0, r);
-        console.log(toBlock, start);
-
-        if (r != widthTop + toBlock) {
-          requestAnimationFrame(step);
-        } else {
-          location.hash = hash;
-        }
-      }
-    });
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (scrolling);
 
 /***/ })
 

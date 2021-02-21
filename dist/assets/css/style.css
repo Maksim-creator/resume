@@ -210,6 +210,10 @@ p.active-style a {
     margin-top: 10px;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 .footer {
   background: linear-gradient( to bottom ,#fff, gold);
 }
