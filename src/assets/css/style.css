@@ -373,6 +373,34 @@ html {
   border: 1px solid black;
   margin-left: 20px;
 }
+
+@media screen and (max-width: 426px){
+  .logo {
+    display: none;
+  }
+  .nav__wrapper_item {
+    display: none;
+  }
+  .about__wrapper {
+    flex-wrap: wrap;
+  }
+  .about__content {
+    margin-top: 15px;
+  }
+  .about__photo {
+    margin: 0 auto;
+  }
+  .projects__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projects_item.horizontal img, .projects_item.horizontal_b img{
+    width: 300px;
+  }
+  .horizontal_b{
+    margin-left: 20px;
+  }
+}
   /* .modal {
     top: calc(50% - 83.3px);
     left: calc(50% - 200px);
