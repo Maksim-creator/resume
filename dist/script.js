@@ -1009,8 +1009,6 @@ var modal = function modal(triggerSelector, modalSelector) {
 __webpack_require__.r(__webpack_exports__);
 var scroll = function scroll() {
   window.addEventListener('scroll', function () {
-    console.log(document.documentElement.scrollTop);
-
     if (document.documentElement.scrollTop > 688) {
       document.querySelectorAll('[data-time]')[0].classList.add('animated', 'fadeIn');
     }
