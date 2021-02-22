@@ -26,6 +26,10 @@ html {
     background: url('../img/nature.jpg') center center/cover no-repeat;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav {
     padding: 10px 0 0 0;
 }
