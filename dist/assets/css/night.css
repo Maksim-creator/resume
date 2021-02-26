@@ -1,0 +1,175 @@
+.header {
+    background: url('../img/night_nature.jpg') center center/cover no-repeat;
+    transition: .5s all;
+}
+*{
+    transition: .5s all;
+}
+.nav .nav__wrapper .nav__wrapper_item a {
+    color: aliceblue;
+}
+
+.nav .nav__wrapper .nav__wrapper_item:last-child button{
+    color: aliceblue;
+    background-color: #778899;
+}
+
+.nav .nav__wrapper .nav__wrapper_item:last-child button:hover {
+    background-color: #2F4F4F;
+}
+
+.header h1 {
+    color: white;
+}
+
+.about {
+    z-index: -1;
+    background-color: #050404;
+}
+
+.transition_top .div{
+    background: linear-gradient(to bottom, black,rgba(29, 29, 29, .3), rgba(15, 14, 14, 0.3), rgba(8, 8, 8, 0.3), black)
+}
+
+.transition_bottom .div {
+    background: linear-gradient(to top, black,rgba(8, 8, 8, 0.3), rgba(15, 14, 14, 0.3), rgba(29, 29, 29, .3), black);
+}
+.transition_bottom.night_tr .div {
+    background: linear-gradient(to top, #484848,rgba(49, 49, 49), rgba(29, 29, 29), rgba(17, 17, 17), black);
+}
+.transition_top.night_tr .div{
+    background: linear-gradient(to bottom, #484848,rgba(29, 29, 29), rgba(15, 14, 14), rgba(8, 8, 8), black)
+}
+
+.about__content_title, .about__content_text, .about__content_education {
+    color: white;
+}
+
+.skills__boxes .skills__box {
+    box-shadow: inset 0px 0px 9px 9px #000;
+}
+
+.about .about__content .about__content_sub::before, .about .about__content .about__content_education-sub::before,.footer .footer_sub::before{
+    z-index: -1;
+    background-color: orange;
+}
+
+.about .about__content hr {
+    background-color: orange;
+}
+
+.about__content_sub, .about__content_education-sub{
+    position: relative;
+    color: white;
+    z-index: 3;
+}
+
+.about .about__photo img:hover {
+    box-shadow: 0 10px 15px rgba(182, 140, 50, 0.6);
+}
+
+.skills {
+    background-color: 	#484848;
+}
+
+.skills .skills_sub {
+    color: white;
+}
+
+.skills .skills_sub::before {
+    background-color: orange;
+}
+
+.skills .skills_title {
+    color: #fff;
+}
+
+.skills hr {
+    background-color: orange;
+    border: 1px orange solid ;
+}
+
+.skills__box {
+    background-color: #fff;
+    border: palegoldenrod;
+    border: 2px solid orange;
+}
+
+.projects {
+    background-color: #050404;
+}
+
+.projects hr {
+    border: 1px solid orange;
+    background-color: orange;
+}
+
+.projects_item img {
+    border: 2px solid orange;
+}
+
+.projects__sub, .projects__title {
+    color: white;
+}
+
+.night_dn {
+    display: none;
+}
+
+.projects .projects_btn {
+    background-color: #778899;
+    color: aliceblue;
+}
+
+.projects .projects_btn:hover{
+    background-color: #2F4F4F;
+}
+
+.footer {
+    background: url(../img/footer_bg_night.jpg) center center/cover no-repeat;
+}
+
+.footer__link:hover {
+    background-color: orange;
+}
+
+.footer .footer__link {
+    color: white;
+    border: 1px solid white;
+}
+
+.footer_sub, .footer_title {
+    color: white;
+}
+
+.l {
+    background-color: rgb(49, 101, 168);
+}
+
+.l:checked {
+    background-color: rgb(216, 206, 206);
+}
+
+/* .projects {
+    position: relative;
+    z-index: -1;
+}
+  
+.projects .projects__sub {
+    padding-top: 20px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 3;
+}
+
+.projects .projects__sub::before{
+    content: '---';
+    padding: 6px;
+    color: orange;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    border-radius: 100%;
+    margin: -5px -26px 0 33px;
+    z-index: -1;
+} */

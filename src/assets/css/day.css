@@ -1,0 +1,134 @@
+.header {
+    background: url('../img/nature.jpg') center center/cover no-repeat;
+    transition: .5s all;
+}
+*{
+    transition: .5s all;
+}
+html, body {
+    background-color: #fff;
+}
+
+.nav .nav__wrapper .nav__wrapper_item a {
+    color: aliceblue;
+}
+
+.nav .nav__wrapper .nav__wrapper_item:last-child button{
+    color: aliceblue;
+    background-color: rgb(199, 136, 54);
+}
+
+.nav .nav__wrapper .nav__wrapper_item:last-child button:hover {
+    background-color: orangered;
+}
+
+.header h1 {
+    color: white;
+}
+
+.transition_top .div{
+    background: linear-gradient(to bottom, black,rgba(29, 29, 29, .3), rgba(75, 75, 75, 0.3), rgba(255, 254, 254, 0.3), #fff)
+}
+
+.transition_bottom .div {
+    background: linear-gradient(to top, black,rgba(29, 29, 29, .3), rgba(75, 75, 75, 0.3), rgba(255, 254, 254, 0.3), #fff);
+}
+
+.about .about__photo img:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .6);
+}
+
+.about__content_sub::before,.about__content_education-sub::before{
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin: -5px 13px 0 -15px;
+    z-index: -1;
+}
+
+.about__content_education-sub, .about__content_sub {
+    position: relative;
+    z-index: 100;
+}
+
+.about .about__content .about__content_sub::before, .about .about__content .about__content_education-sub::before,.footer .footer_sub::before{
+    background-color: orange;
+}
+
+.about .about__content hr {
+    background-color: orange;
+}
+
+.skills {
+    background-color: black;
+}
+
+.skills .skills_sub {
+    color: white;
+}
+
+.skills .skills_sub::before {
+    background-color: orange;
+}
+
+.skills .skills_title {
+    color: #fff;
+}
+
+.skills hr {
+    background-color: orange;
+    border: 1px orange solid ;
+}
+
+.skills__box {
+    background-color: #fff;
+    border: palegoldenrod;
+    border: 2px solid orange;
+}
+.projects {
+    background-color: #fff;
+}
+.projects .projects__sub::before{
+    background-color: orange;
+}
+
+.projects hr {
+    border: 1px solid orange;
+    background-color: orange;
+}
+
+.projects_item img {
+    border: 2px solid orange;
+}
+
+.projects .projects_btn {
+    background-color: orange;
+    color: white;
+}
+
+.projects .projects_btn:hover{
+    background-color: orangered;
+}
+
+.footer {
+    background: url(../img/footer_bg.jpg) center center/cover no-repeat;
+}
+
+.footer__link:hover {
+    background-color: orange;
+}
+
+.footer .footer__link {
+    color: black;
+    border: 1px solid black;
+}
+
+.l {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.l:checked {
+	background-color: rgba(0,0,0,0.45);
+}

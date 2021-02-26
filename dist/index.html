@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/fonts/AkayaKanadaka-Regular.ttf">
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/day.css" class="theme">
+    <link rel="stylesheet" href="./assets/css/toggleBtn.css">
     <title>Resume</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
         <div class="header__wrapper">
             <nav class="nav">
                 <ul class="nav__wrapper">
-                    <img class="nav__wrapper_item logo" src="./assets/img/logo.webp">
+                    <!-- <img class="nav__wrapper_item logo" src="./assets/img/logo.webp"> -->
                     <li class="nav__wrapper_item"><a href="#about">About me</a></li>
                     <li class="nav__wrapper_item"><a href="#projects">Projects</a></li>
                     <li class="nav__wrapper_item"><a href="#stack">Stack</a></li>
@@ -57,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="transition_bottom" data-time>
+    <section class="transition_bottom night_tr" data-time>
         <div class="div"></div>
     </section>
     <section class="skills" id="stack">
@@ -86,7 +88,7 @@
                     <div class="skills__box">
                         <img src="./assets/img/Bootstrap.png" alt="Boots">
                         <div class="skills__box_title">Bootstrap</div>
-                        <div class="skills__box_text">Свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса.</div>
+                        <div class="skills__box_text">Свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления компонентов веб-интерфейса.</div>
                     </div>
                     <div class="skills__box">
                         <img src="./assets/img/SASS.jpg" alt="SASS">
@@ -111,7 +113,7 @@
             </div>
         </div>
     </section>
-    <section class="transition_top" data-time>
+    <section class="transition_top night_tr" data-time>
         <div class="div"></div>
     </section>
     <section class="projects" id='projects'>
@@ -137,10 +139,10 @@
             <input type="button" class="projects_btn" value="Посмотреть все проекты!" onclick='location.href="https:\/\/github.com/Maksim-creator"'>
         </form>
     </section>
-    <section class="transition_bottom">
+    <section class="transition_bottom night_dn">
         <div class="div"></div>
     </section>
-    <section class="transition_top">
+    <section class="transition_top night_dn">
         <div class="div"></div>
     </section>
     <footer class="footer" id="contacts">
@@ -175,6 +177,11 @@
             </div>
         </div>
     </div>
+
+    <div class="main">
+    <input class="l" type="checkbox">
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
