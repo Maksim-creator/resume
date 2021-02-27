@@ -2,7 +2,7 @@
     background: url('../img/night_nature.jpg') center center/cover no-repeat;
     transition: .5s all;
 }
-*{
+*:not(body){
     transition: .5s all;
 }
 .nav .nav__wrapper .nav__wrapper_item a {
@@ -97,6 +97,10 @@
 
 .projects {
     background-color: #050404;
+}
+
+.projects__sub::before{
+    background-color: orange;
 }
 
 .projects hr {

@@ -2,7 +2,7 @@
     background: url('../img/nature.jpg') center center/cover no-repeat;
     transition: .5s all;
 }
-*{
+*:not(body){
     transition: .5s all;
 }
 html, body {
@@ -88,10 +88,17 @@ html, body {
     border: 2px solid orange;
 }
 .projects {
-    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 .projects .projects__sub::before{
+    position: relative;
     background-color: orange;
+    z-index: -1;
+}
+
+.projects__sub{
+    z-index: 3;
 }
 
 .projects hr {

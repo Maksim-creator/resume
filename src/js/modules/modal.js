@@ -8,6 +8,7 @@ const modal = (triggerSelector,modalSelector) => {
 
     trigger.forEach(item => {
         item.addEventListener('click', (e) => {
+            e.preventDefault()
             document.body.style.overflow = 'hidden';
             document.body.style.marginRight = `${scroll}px`;
             document.body.style.backgroundColor = 'rgba(232,235,231, .5)'

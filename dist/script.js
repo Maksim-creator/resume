@@ -2203,6 +2203,7 @@ var modal = function modal(triggerSelector, modalSelector) {
   modalWindow.classList.add('animated');
   trigger.forEach(function (item) {
     item.addEventListener('click', function (e) {
+      e.preventDefault();
       document.body.style.overflow = 'hidden';
       document.body.style.marginRight = "".concat(scroll, "px");
       document.body.style.backgroundColor = 'rgba(232,235,231, .5)';
