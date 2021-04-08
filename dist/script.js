@@ -2295,7 +2295,6 @@ var toggleBtn = function toggleBtn(trigger) {
 
     if (checkbox.checked) {
       var arr = themeLink.getAttribute('href').toString().split('/');
-      console.log(arr);
       arr[arr.length - 1] = 'night.css';
       arr = arr.join('/');
       themeLink.setAttribute('href', arr);
